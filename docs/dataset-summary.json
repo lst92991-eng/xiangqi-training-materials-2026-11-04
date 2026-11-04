@@ -1,0 +1,100 @@
+{
+  "total_converted_images": 10094,
+  "recommended_images": 9187,
+  "splits": {
+    "train": 9066,
+    "val": 67,
+    "test": 54
+  },
+  "class_box_counts": {
+    "train": [
+      7528,
+      14986,
+      15275,
+      15139,
+      15198,
+      15332,
+      38033,
+      8010,
+      15595,
+      15456,
+      15258,
+      15138,
+      15713,
+      38512
+    ],
+    "val": [
+      52,
+      87,
+      91,
+      87,
+      94,
+      98,
+      211,
+      50,
+      88,
+      88,
+      92,
+      93,
+      95,
+      139
+    ],
+    "test": [
+      48,
+      96,
+      96,
+      99,
+      96,
+      101,
+      247,
+      52,
+      95,
+      105,
+      95,
+      95,
+      96,
+      258
+    ]
+  },
+  "source_converted": {
+    "wood": 8032,
+    "fpt": 1645,
+    "viktor": 200,
+    "legacy": 217
+  },
+  "source_recommended": {
+    "wood": 7416,
+    "fpt": 1354,
+    "viktor": 200,
+    "legacy": 217
+  },
+  "source_parent_names": {
+    "wood": 3320,
+    "fpt": 685,
+    "viktor": 200,
+    "legacy": 217
+  },
+  "exclusions": {
+    "heldout_session_training_augmentation": 906,
+    "exact_pixel_duplicate": 1
+  },
+  "issues": 2,
+  "removed_intersection_boxes": 1552,
+  "rounding_clipped_boxes": 0,
+  "classes": [
+    "k",
+    "a",
+    "b",
+    "n",
+    "r",
+    "c",
+    "p",
+    "K",
+    "A",
+    "B",
+    "N",
+    "R",
+    "C",
+    "P"
+  ]
+}

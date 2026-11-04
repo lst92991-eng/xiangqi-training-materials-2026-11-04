@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "converted_images": 10094,
+  "active_images": 9187,
+  "capture_groups": 15,
+  "splits": {
+    "train": 9066,
+    "val": 67,
+    "test": 54
+  },
+  "boxes": 248117,
+  "checks": [
+    "all YOLO labels finite, valid classes and in-bounds",
+    "all image/label paths exist",
+    "class totals match manifest",
+    "no exact pixel duplicate in active lists",
+    "no known capture group crosses splits",
+    "all 14 classes present in every split"
+  ],
+  "limitations": [
+    "not exhaustive semantic annotation review",
+    "unknown sessions confined to training",
+    "near-duplicate scenes not exhaustively detected",
+    "requires independent current-camera evaluation"
+  ]
+}

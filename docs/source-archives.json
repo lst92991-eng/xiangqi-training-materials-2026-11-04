@@ -1,0 +1,22 @@
+[
+  {
+    "source": "wood",
+    "archive": "chess.v6i.coco.zip",
+    "sha256": "12c0150e1e345cb23350d1f58289b69762d3b26ddf7f6f139dba8e9e4f222a12"
+  },
+  {
+    "source": "fpt",
+    "archive": "FPT_v5_1645_COCO_原始导出.zip",
+    "sha256": "8e37301cd4ef76dbfc4095413dfed0c060330a356edc24e7b8e1476679a1880c"
+  },
+  {
+    "source": "viktor",
+    "archive": "ViktorNg_200_YOLO_原始导出.zip",
+    "sha256": "9a665f6fbd63335c63ae35727948ff2e52b85df6790710fa2d9b5c682545e624"
+  },
+  {
+    "source": "legacy",
+    "archive": "yolo14-v1.zip",
+    "sha256": "b573f76bd8f6aff8718108080fc3372795a2ba8255744eeb4c14725be4e2494e"
+  }
+]

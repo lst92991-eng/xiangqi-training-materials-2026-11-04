@@ -1,0 +1,28 @@
+{
+  "archive": "xiangqi-training-20261104.zip",
+  "bytes": 2138495609,
+  "sha256": "560d27b9c75aa2fcee07329ab5e64c3e6ae2d2761ba628da3c46c31c776e4e5b",
+  "parts": [
+    {
+      "name": "xiangqi-training-20261104.zip.part01",
+      "bytes": 838860800,
+      "sha256": "a7d6caf7e3b4d363353ad26fb5545513d9c79d942f8ecc853bfb12bb805ec7c9",
+      "url": "https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/download/v2026.11.04/xiangqi-training-20261104.zip.part01"
+    },
+    {
+      "name": "xiangqi-training-20261104.zip.part02",
+      "bytes": 838860800,
+      "sha256": "fd47aa7c8a9e0d0d1305d818fd18b60532bf0341fe3eb4ad70f20f809851e828",
+      "url": "https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/download/v2026.11.04/xiangqi-training-20261104.zip.part02"
+    },
+    {
+      "name": "xiangqi-training-20261104.zip.part03",
+      "bytes": 460774009,
+      "sha256": "623557fc604b405f37833bea516c4ac7a80e30e7295156555bddf0485a28cb13",
+      "url": "https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/download/v2026.11.04/xiangqi-training-20261104.zip.part03"
+    }
+  ],
+  "repository": "lst92991-eng/xiangqi-training-materials-2026-11-04",
+  "tag": "v2026.11.04",
+  "extracted_directory": "象棋训练素材补充包_2026-11-04"
+}

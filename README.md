@@ -1,12 +1,22 @@
 # 象棋训练素材 / Xiangqi training materials
 
-为 SC3336 摄像头 + RV1106 象棋识别准备的公开素材交接包。数据已下载、转换和校验，**没有训练新模型**。
+为 SC3336 摄像头 + RV1106 象棋识别准备的训练素材、标注与模型交接仓库。现已提供 **v3 本机场景模型上机测试版**；其余章节保留对应素材包的交接记录。
+
+## 2026-11-05 v3 模型上机测试版
+
+- [下载 RV1106 模型：xiangqi14-local-v3-rv1106.rknn](https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/download/v2026.11.05-model-v3/xiangqi14-local-v3-rv1106.rknn)
+- [下载完整模型包：PT / ONNX / RKNN / 参数](https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/download/v2026.11.05-model-v3/xiangqi-model-v3-20261105.zip)
+- [Release 与校验文件](https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/tag/v2026.11.05-model-v3) · [上机参数、验证结果与限制](docs/model-v3.md)
+
+沿用 YOLOv5s/ReLU、RGB 640×640、红黑14类和 RKNN Toolkit2 / 板端运行时 1.6.0 配套接口。`.pt` 和 `.onnx` 在完整模型包中；RV1106 NPU 使用 `.rknn`。
+
+本次15帧原图各重复10轮，FP32及量化模拟均无错认、漏检、额外框；扩大到模糊、拖影、缩小和组合扰动后仍有错误。**这是供上机复测的候选模型，未完成本次新权重的RV1106实板验收，也不保证任意场景100%正确。** 原始补充包中的52处黑将/黑象对调标注已在训练副本中修正，[修改清单](docs/model-v3-label-corrections.json)保留，原数据Release未覆盖。
 
 ## 2026-11-05 本机实拍补充包
 
-[下载新补充包（约 191 MB）](https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/tag/v2026.11.05-local-data)：三段 SC3336 录像、688 张候选图；其中 26 张 / 832 个框经助手视觉复核，提供小型 YOLO14 基准（train 19 / val 3 / test 4）、本地标注审核工具和微调交接说明。**688 张不等于 688 个独立有效局面，未审核草稿不能直接训练。** 新权重未重复发布；沿用训练电脑上的 expanded-v1.pt。
+[下载实拍补充包（约 191 MB）](https://github.com/lst92991-eng/xiangqi-training-materials-2026-11-04/releases/tag/v2026.11.05-local-data)：三段 SC3336 录像、688 张候选图；其中 26 张 / 832 个框经助手视觉复核，提供小型 YOLO14 基准（train 19 / val 3 / test 4）、本地标注审核工具和微调交接说明。**688 张不等于 688 个独立有效局面，未审核草稿不能直接训练。** 此素材包发布时未训练新权重；后续v3模型及标注纠错见上节。
 
-解压后先读 `README_训练交接.md`，运行 `python 05_tools/configure_paths.py` 生成本机路径。新包单独下载，下面的 `download_dataset.py` 仍下载 2026-11-04 公共大数据包。原模型同帧 ONNX / NPU 的 30 对检测中有 29 对类别一致，主要错分类在浮点模型里已存在；下一轮优先补本机字形与实际场景，再做小学习率微调和独立测试。没有在本机启动训练。
+解压后先读 `README_训练交接.md`，运行 `python 05_tools/configure_paths.py` 生成本机路径。新包单独下载，下面的 `download_dataset.py` 仍下载 2026-11-04 公共大数据包。素材交接时的排查记录为：原模型同帧 ONNX / NPU 的 30 对检测中有 29 对类别一致，主要错分类在浮点模型里已存在，当时尚未启动新训练。后续微调结果以本页v3模型章节为准。
 
 ## 另一台电脑下载
 

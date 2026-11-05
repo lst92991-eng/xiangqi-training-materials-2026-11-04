@@ -1,0 +1,1020 @@
+{
+  "source_frames": 15,
+  "newly_reviewed_frames": 8,
+  "original_repeat_rounds_per_backend": 10,
+  "unique_variants_per_backend": 630,
+  "meaning": "Repeated/derived evaluations are not additional independent photographs.",
+  "protocol": "Frozen v3, score .50, class-agnostic NMS .45, geometric match IoU .50. Original frames repeated 10 times. All variants evaluated by PyTorch and quantized PC simulator.",
+  "limitations": "15 distinct frames from previously recorded s03/s04 sessions. Derived variants and repeats are not additional independent photography. No physical board, no retraining.",
+  "backends": {
+    "torch": {
+      "runtime": {
+        "backend": "torch",
+        "model_sha256": "d6155e0d4048809a69b73860262e574ab22a25859a2a01f5b4265b5f7fd7fc2a",
+        "threshold": 0.5,
+        "nms_iou": 0.45,
+        "class_agnostic": true,
+        "match_iou": 0.5,
+        "physical_board": false,
+        "torch": "2.7.1+cu128",
+        "opencv": "5.0.0",
+        "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU"
+      },
+      "repetition": {
+        "evaluations": 150,
+        "targets": 4800,
+        "correct": 4800,
+        "wrong": 0,
+        "missed": 0,
+        "extra": 0,
+        "max_prediction_difference_across_rounds": 0,
+        "all_counts_identical": true
+      },
+      "tiers": {
+        "original": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "boundary": {
+          "images": 135,
+          "targets": 4320,
+          "correct": 3923,
+          "wrong": 382,
+          "missed": 15,
+          "extra": 0,
+          "all_correct_images": 59
+        },
+        "moderate": {
+          "images": 255,
+          "targets": 8160,
+          "correct": 8140,
+          "wrong": 19,
+          "missed": 1,
+          "extra": 0,
+          "all_correct_images": 236
+        },
+        "random-combination": {
+          "images": 225,
+          "targets": 7200,
+          "correct": 7199,
+          "wrong": 1,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 224
+        }
+      },
+      "conditions": {
+        "original": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "brightness-0.6": {
+          "images": 15,
+          "targets": 480,
+          "correct": 478,
+          "wrong": 2,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 13
+        },
+        "brightness-0.8": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "brightness-1.2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "brightness-1.4": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "gamma-0.7": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "gamma-1.4": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "blur-0.6": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "blur-1.2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 469,
+          "wrong": 10,
+          "missed": 1,
+          "extra": 0,
+          "all_correct_images": 5
+        },
+        "blur-2.0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 315,
+          "wrong": 155,
+          "missed": 10,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "motion-h3": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "motion-h7": {
+          "images": 15,
+          "targets": 480,
+          "correct": 425,
+          "wrong": 52,
+          "missed": 3,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "motion-v7": {
+          "images": 15,
+          "targets": 480,
+          "correct": 408,
+          "wrong": 72,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "jpeg-75": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "jpeg-40": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "jpeg-20": {
+          "images": 15,
+          "targets": 480,
+          "correct": 474,
+          "wrong": 6,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 10
+        },
+        "noise-4": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "noise-8": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "noise-16": {
+          "images": 15,
+          "targets": 480,
+          "correct": 470,
+          "wrong": 10,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 6
+        },
+        "scale-0.75": {
+          "images": 15,
+          "targets": 480,
+          "correct": 475,
+          "wrong": 5,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 10
+        },
+        "scale-0.55": {
+          "images": 15,
+          "targets": 480,
+          "correct": 393,
+          "wrong": 85,
+          "missed": 2,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "rotation--15": {
+          "images": 15,
+          "targets": 480,
+          "correct": 476,
+          "wrong": 4,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 11
+        },
+        "rotation--5": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "rotation-5": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "rotation-15": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "perspective": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "resolution-half": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-101-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-101-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-101-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-202-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-202-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-202-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-303-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 479,
+          "wrong": 1,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 14
+        },
+        "random-303-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-303-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-404-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-404-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-404-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-505-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-505-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-505-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        }
+      },
+      "top_confusions": [
+        [
+          "P->A",
+          47
+        ],
+        [
+          "B->R",
+          38
+        ],
+        [
+          "n->c",
+          30
+        ],
+        [
+          "C->B",
+          28
+        ],
+        [
+          "n->k",
+          25
+        ],
+        [
+          "N->R",
+          24
+        ],
+        [
+          "B->K",
+          23
+        ],
+        [
+          "N->K",
+          21
+        ],
+        [
+          "p->r",
+          19
+        ],
+        [
+          "c->b",
+          18
+        ],
+        [
+          "K->B",
+          17
+        ],
+        [
+          "p->k",
+          16
+        ]
+      ]
+    },
+    "quant": {
+      "runtime": {
+        "backend": "quant",
+        "model_sha256": "d6155e0d4048809a69b73860262e574ab22a25859a2a01f5b4265b5f7fd7fc2a",
+        "threshold": 0.5,
+        "nms_iou": 0.45,
+        "class_agnostic": true,
+        "match_iou": 0.5,
+        "physical_board": false,
+        "rebuilt_sha256": "05f5d5ea79e046d5e8de9185f7df834433783a7d0dd0e1f2453f5de8b1995219",
+        "delivered_rknn_sha256": "ce9c91f4668cb0ec58f836432546b7eb2aebfc675ba696ce9788968560dcbdd2",
+        "byte_identical_rebuild": false,
+        "runtime": "RKNN Toolkit2 1.6.0 PC simulator, not hardware"
+      },
+      "repetition": {
+        "evaluations": 150,
+        "targets": 4800,
+        "correct": 4800,
+        "wrong": 0,
+        "missed": 0,
+        "extra": 0,
+        "max_prediction_difference_across_rounds": 0,
+        "all_counts_identical": true
+      },
+      "tiers": {
+        "original": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "boundary": {
+          "images": 135,
+          "targets": 4320,
+          "correct": 3918,
+          "wrong": 388,
+          "missed": 14,
+          "extra": 0,
+          "all_correct_images": 57
+        },
+        "moderate": {
+          "images": 255,
+          "targets": 8160,
+          "correct": 8141,
+          "wrong": 18,
+          "missed": 1,
+          "extra": 0,
+          "all_correct_images": 237
+        },
+        "random-combination": {
+          "images": 225,
+          "targets": 7200,
+          "correct": 7194,
+          "wrong": 6,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 219
+        }
+      },
+      "conditions": {
+        "original": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "brightness-0.6": {
+          "images": 15,
+          "targets": 480,
+          "correct": 478,
+          "wrong": 2,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 13
+        },
+        "brightness-0.8": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "brightness-1.2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "brightness-1.4": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "gamma-0.7": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "gamma-1.4": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "blur-0.6": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "blur-1.2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 470,
+          "wrong": 9,
+          "missed": 1,
+          "extra": 0,
+          "all_correct_images": 6
+        },
+        "blur-2.0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 315,
+          "wrong": 157,
+          "missed": 8,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "motion-h3": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "motion-h7": {
+          "images": 15,
+          "targets": 480,
+          "correct": 424,
+          "wrong": 51,
+          "missed": 5,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "motion-v7": {
+          "images": 15,
+          "targets": 480,
+          "correct": 408,
+          "wrong": 72,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "jpeg-75": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "jpeg-40": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "jpeg-20": {
+          "images": 15,
+          "targets": 480,
+          "correct": 472,
+          "wrong": 8,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 9
+        },
+        "noise-4": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "noise-8": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "noise-16": {
+          "images": 15,
+          "targets": 480,
+          "correct": 468,
+          "wrong": 12,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 5
+        },
+        "scale-0.75": {
+          "images": 15,
+          "targets": 480,
+          "correct": 475,
+          "wrong": 5,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 10
+        },
+        "scale-0.55": {
+          "images": 15,
+          "targets": 480,
+          "correct": 393,
+          "wrong": 86,
+          "missed": 1,
+          "extra": 0,
+          "all_correct_images": 0
+        },
+        "rotation--15": {
+          "images": 15,
+          "targets": 480,
+          "correct": 476,
+          "wrong": 4,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 11
+        },
+        "rotation--5": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "rotation-5": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "rotation-15": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "perspective": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "resolution-half": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-101-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-101-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-101-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-202-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 479,
+          "wrong": 1,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 14
+        },
+        "random-202-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-202-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-303-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 476,
+          "wrong": 4,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 11
+        },
+        "random-303-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-303-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-404-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 479,
+          "wrong": 1,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 14
+        },
+        "random-404-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-404-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-505-0": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-505-1": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        },
+        "random-505-2": {
+          "images": 15,
+          "targets": 480,
+          "correct": 480,
+          "wrong": 0,
+          "missed": 0,
+          "extra": 0,
+          "all_correct_images": 15
+        }
+      },
+      "top_confusions": [
+        [
+          "P->A",
+          47
+        ],
+        [
+          "B->R",
+          37
+        ],
+        [
+          "C->B",
+          30
+        ],
+        [
+          "n->c",
+          29
+        ],
+        [
+          "n->k",
+          25
+        ],
+        [
+          "N->R",
+          24
+        ],
+        [
+          "B->K",
+          24
+        ],
+        [
+          "N->K",
+          20
+        ],
+        [
+          "p->r",
+          19
+        ],
+        [
+          "K->B",
+          17
+        ],
+        [
+          "c->b",
+          17
+        ],
+        [
+          "p->k",
+          16
+        ]
+      ]
+    }
+  },
+  "quantization_rebuild_comparison": {
+    "delivered_sha256": "ce9c91f4668cb0ec58f836432546b7eb2aebfc675ba696ce9788968560dcbdd2",
+    "rebuilt_sha256": "05f5d5ea79e046d5e8de9185f7df834433783a7d0dd0e1f2453f5de8b1995219",
+    "same_length": true,
+    "different_byte_offsets": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      50,
+      51,
+      52,
+      53,
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "bytes_from_offset_64_identical": true,
+    "interpretation": "PC simulator requires rebuild from the delivered ONNX and original calibration. Full file hashes differ; 14 differing bytes are confined to the first 64 bytes. The rest is byte-identical. No claim about the meaning of those differing fields or physical hardware verification."
+  },
+  "delivered_models_and_zip_unchanged": true
+}
